@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Node Js File uploads</title>
+</head>
+<body>
+    <div class="bg-dark">
+        <p class="text-danger ">
+        Node Js File Uploads
+    </p>
+    
+    </div>
+    
+    <section class="contact-us jumbotron container">
+          <br>
+        <%= typeof msg != 'undefined'? msg: '' %>  
+        <form action="./upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="myImage" id="" class="form">
+            </div>
+            <div class="form-group">
+                <br>
+                <input type="submit" value="Send Message" name="submit" id="" class="btn btn-primary">
+            </div>
+        </form>
+      </section>
+</body>
+</html>
